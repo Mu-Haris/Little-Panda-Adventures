@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Panda Adventures - Interactive Stories for Kids</title>
+    <meta name="description" content="Little Panda Adventures is a fun, interactive story app for kids. Join Panda on exciting daily adventures filled with kindness, sharing, and learning!">
+    <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, 'SF Pro Rounded', 'Nunito', sans-serif;
+            background: linear-gradient(180deg, #e8f5e9 0%, #fff8e1 50%, #fce4ec 100%);
+            min-height: 100vh;
+            color: #3e2723;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #4e342e;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        .hero .subtitle {
+            font-size: 1.2rem;
+            color: #6d4c41;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        .panda-emoji {
+            font-size: 4rem;
+            display: block;
+            margin-bottom: 16px;
+        }
+        .features {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+        }
+        .feature {
+            background: rgba(255,255,255,0.85);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+        .feature h3 {
+            font-size: 1.1rem;
+            color: #4e342e;
+            margin-bottom: 4px;
+        }
+        .feature p {
+            font-size: 0.9rem;
+            color: #795548;
+            line-height: 1.4;
+        }
+        .download-section {
+            text-align: center;
+            padding: 40px 20px 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .download-section h2 {
+            font-size: 1.6rem;
+            color: #4e342e;
+            margin-bottom: 20px;
+        }
+        .qr-code {
+            display: inline-block;
+            background: white;
+            padding: 16px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 16px;
+        }
+        .qr-code img {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+        }
+        .qr-label {
+            font-size: 0.85rem;
+            color: #8d6e63;
+            margin-bottom: 24px;
+        }
+        .app-store-badge {
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        .app-store-badge img {
+            height: 54px;
+        }
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.85rem;
+            color: #8d6e63;
+        }
+        .footer a {
+            color: #6d4c41;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+        .footer a:hover { text-decoration: underline; }
+        .days-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            max-width: 500px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
+        }
+        .day-card {
+            background: rgba(255,255,255,0.8);
+            border-radius: 16px;
+            padding: 16px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .day-card .day-num {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #a1887f;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .day-card .day-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #4e342e;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <span class="panda-emoji">🐼</span>
+        <h1>Little Panda Adventures</h1>
+        <p class="subtitle">Interactive stories that teach kids kindness, sharing & good manners</p>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <span class="feature-icon">🎬</span>
+            <div>
+                <h3>Interactive Video Stories</h3>
+                <p>Kids make choices that shape the story! Every decision teaches a gentle life lesson.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">🌈</span>
+            <div>
+                <h3>6 Unique Adventures</h3>
+                <p>From morning routines to helping friends, each day brings a new adventure for Panda.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">💛</span>
+            <div>
+                <h3>Kind Correction, Not Punishment</h3>
+                <p>Wrong choices lead to gentle "oops" moments where Panda learns to do better.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">👶</span>
+            <div>
+                <h3>Designed for Little Ones</h3>
+                <p>Big buttons, simple choices, and a cozy treehouse world perfect for ages 2-6.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 style="text-align:center; font-size:1.3rem; color:#4e342e; margin-bottom:16px;">Story Days</h2>
+    <div class="days-grid">
+        <div class="day-card">
+            <div class="day-num">Day 1</div>
+            <div class="day-title">Panda's Happy Day</div>
+        </div>
+        <div class="day-card">
+            <div class="day-num">Day 2</div>
+            <div class="day-title">Panda Goes to School</div>
+        </div>
+        <div class="day-card">
+            <div class="day-num">Day 3</div>
+            <div class="day-title">Panda Learns Good Manners</div>
+        </div>
+        <div class="day-card">
+            <div class="day-num">Day 4</div>
+            <div class="day-title">Panda Learns to Share</div>
+        </div>
+        <div class="day-card">
+            <div class="day-num">Day 5</div>
+            <div class="day-title">Panda Helps a Friend</div>
+        </div>
+        <div class="day-card">
+            <div class="day-num">Day 6</div>
+            <div class="day-title">Panda Learns to Say Thank You</div>
+        </div>
+    </div>
+
+    <div class="download-section">
+        <h2>Download Now</h2>
+        <div class="qr-code">
+            <img id="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fapps.apple.com%2Fapp%2Flittle-panda-adventures%2Fid6744206353" alt="QR Code - Download Little Panda Adventures">
+        </div>
+        <p class="qr-label">Scan to download from the App Store</p>
+        <div class="app-store-badge">
+            <a href="https://apps.apple.com/app/little-panda-adventures/id6744206353">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+        </p>
+        <p style="margin-top: 12px;">&copy; 2026 Little Panda Adventures. All rights reserved.</p>
+    </div>
+</body>
+</html>
